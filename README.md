@@ -36,10 +36,14 @@ To address concerns regarding the calibration of the sensitivity coefficient ($\
 ### **How to Run**
 
 1. **Install Dependencies:**  
+```
    pip install numpy matplotlib pandas seaborn
+```
 
 2. **Execute the Script:**  
-   python scripts/sensitivity\_analysis.py
+```
+   python scripts/sensitivity_analysis.py
+```
 
 3. **Output:**  
    * **sensitivity\_analysis.pdf**: A high-resolution vector plot corresponding to **Figure 6** in the revised manuscript.  
@@ -47,25 +51,25 @@ To address concerns regarding the calibration of the sensitivity coefficient ($\
 
 ## **📁 Repository Structure**
 
+```
 Q-SPI/  
 ├── data/  
-│   ├── audit\_trail/               \# Anonymized evidence for reviewers  
-│   │   ├── bioarc\_sprint\_metrics\_anonymized.csv  
-│   │   ├── sonarqube\_debt\_timeline.csv  
-│   │   └── git\_commit\_audit\_trail.txt  
-│   └── apache\_dubbo/              \# Public data for Case Study 2  
+│   └── audit_trail/               \# Anonymized evidence for reviewers  
+│       ├── bioarc_sprint_metrics_anonymized.csv  
+│       ├── sonarqube_debt_timeline.csv  
+│       └── git_commit_audit_trail.txt   
 ├── scripts/  
-│   ├── calculate\_qspi.py          \# Core logic for Q-SPI calculation  
-│   └── sensitivity\_analysis.py    \# Robustness check script  
+│   ├── calculate_qspi.py          \# Core logic for Q-SPI calculation  
+│   └── sensitivity_analysis.py    \# Robustness check script  
 ├── results/                       \# Generated figures and tables  
-├── README.md                      \# This file  
-└── LICENSE
+└── README.md                      \# This file  
+```
 
 ## **🔗 Citation**
 
 If you use this model or dataset in your research, please cite:
 
-Tanhaei, M. (Under Review). "Q-SPI: Integrating Technical Debt into Earned Value Management via the Quality-Adjusted SPI".
+Tanhaei, M. "Q-SPI: Integrating Technical Debt into Earned Value Management via the Quality-Adjusted SPI".
 
 *(BibTeX will be updated upon publication)*
 
