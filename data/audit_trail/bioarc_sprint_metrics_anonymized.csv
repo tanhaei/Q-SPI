@@ -1,0 +1,91 @@
+Sprint_ID,Start_Date,End_Date,Task_ID,Task_Type,Story_Points,Status,Resolution,Component,Notes
+S01,2023-12-04,2023-12-17,BA-101,Story,8,Done,Fixed,Core_Auth,"Initial setup"
+S01,2023-12-04,2023-12-17,BA-102,Story,13,Done,Fixed,DB_Schema,"Patient tables"
+S01,2023-12-04,2023-12-17,BA-103,Story,20,Done,Fixed,Frontend_Base,"Dashboard UI"
+S01,2023-12-04,2023-12-17,BA-104,Story,13,Done,Fixed,API_Gateway,"Basic routing"
+S01,2023-12-04,2023-12-17,BA-105,Story,20,Done,Fixed,User_Management,"Roles & Permissions"
+S01,2023-12-04,2023-12-17,BA-106,Story,13,Done,Fixed,Logging,"Activity logs"
+S01,2023-12-04,2023-12-17,BA-107,Bug,5,Done,Fixed,Core_Auth,"Login fix"
+S01,2023-12-04,2023-12-17,BA-108,Story,8,Done,Fixed,Notification,"Email service"
+# Sprint 1 Total EV: 100
+
+S02,2023-12-18,2023-12-31,BA-201,Story,20,Done,Fixed,Patient_Profile,"CRUD operations"
+S02,2023-12-18,2023-12-31,BA-202,Story,13,Done,Fixed,Search_Engine,"Elasticsearch integration"
+S02,2023-12-18,2023-12-31,BA-203,Story,13,Done,Fixed,Insurance_Base,"Basic models"
+S02,2023-12-18,2023-12-31,BA-204,Story,20,Done,Fixed,Appointment,"Scheduler module"
+S02,2023-12-18,2023-12-31,BA-205,Story,13,Done,Fixed,Reports,"Daily stats"
+S02,2023-12-18,2023-12-31,BA-206,Story,13,Done,Fixed,Frontend_Patient,"Profile forms"
+S02,2023-12-18,2023-12-31,BA-207,Bug,8,Done,Fixed,DB_Schema,"Migration fix"
+S02,2023-12-18,2023-12-31,BA-208,Story,5,Done,Fixed,Settings,"Config panel"
+# Sprint 2 Total EV: 105
+
+S03,2024-01-01,2024-01-14,BA-301,Story,40,Done,Fixed,EHR_Module,"Core medical records"
+S03,2024-01-01,2024-01-14,BA-302,Story,20,Done,Fixed,Doctor_Panel,"Physician dashboard"
+S03,2024-01-01,2024-01-14,BA-303,Story,13,Done,Fixed,Lab_Interface,"Result upload"
+S03,2024-01-01,2024-01-14,BA-304,Story,13,Done,Fixed,Prescription,"Basic write"
+S03,2024-01-01,2024-01-14,BA-305,Bug,8,Done,Fixed,Search_Engine,"Index sync issue"
+S03,2024-01-01,2024-01-14,BA-306,Story,13,Done,Fixed,Frontend_EHR,"Forms UI"
+# Sprint 3 Total EV: 107
+
+# --- PHASE 2: THE RUSH (High Debt Accumulation) ---
+
+S04,2024-01-15,2024-01-28,BA-401,Story,40,Done,Fixed,OTP_Auth,"URGENT: SMS OTP Implementation"
+S04,2024-01-15,2024-01-28,BA-402,Story,20,Done,Fixed,Claim_Submission,"Tamin API v1"
+S04,2024-01-15,2024-01-28,BA-403,Story,20,Done,Fixed,Claim_Submission,"Salamat API v1"
+S04,2024-01-15,2024-01-28,BA-404,Story,13,Done,Fixed,Frontend_Auth,"Login redesign"
+S04,2024-01-15,2024-01-28,BA-405,Story,13,Done,Fixed,Token_Manager,"JWT handling (Insecure)"
+S04,2024-01-15,2024-01-28,BA-406,Bug,5,Done,Fixed,API_Gateway,"Timeout fix"
+S04,2024-01-15,2024-01-28,BA-407,Story,4,Done,Fixed,Validation,"Quick patch"
+# Sprint 4 Total EV: 115 (High Velocity, Q-SPI Drops)
+
+S05,2024-01-29,2024-02-11,BA-501,Story,40,Done,Fixed,Drug_Interaction,"Complex logic copy-pasted"
+S05,2024-01-29,2024-02-11,BA-502,Story,20,Done,Fixed,Dynamic_Forms,"Specialty A forms"
+S05,2024-01-29,2024-02-11,BA-503,Story,20,Done,Fixed,Dynamic_Forms,"Specialty B forms"
+S05,2024-01-29,2024-02-11,BA-504,Story,13,Done,Fixed,Batch_Process,"Async claims"
+S05,2024-01-29,2024-02-11,BA-505,Story,13,Done,Fixed,Frontend_Drugs,"Interaction UI"
+S05,2024-01-29,2024-02-11,BA-506,Story,8,Done,Fixed,Reports,"New export format"
+S05,2024-01-29,2024-02-11,BA-507,Bug,6,Done,Fixed,OTP_Auth,"Retry logic"
+# Sprint 5 Total EV: 120 (Peak Illusion)
+
+S06,2024-02-12,2024-02-25,BA-601,Story,40,Done,Fixed,API_Update_V2,"Mandatory Schema Change"
+S06,2024-02-12,2024-02-25,BA-602,Story,20,Done,Fixed,Validation_Layer,"New fields added"
+S06,2024-02-12,2024-02-25,BA-603,Story,20,Done,Fixed,Frontend_Claims,"Form updates"
+S06,2024-02-12,2024-02-25,BA-604,Story,20,Done,Fixed,Async_Queue,"Optimization"
+S06,2024-02-12,2024-02-25,BA-605,Story,13,Done,Fixed,Notification,"SMS templates"
+S06,2024-02-12,2024-02-25,BA-606,Bug,7,Done,Fixed,Drug_Interaction,"False positive fix"
+# Sprint 6 Total EV: 120
+
+# --- PHASE 3: THE COLLAPSE (Technical Bankruptcy) ---
+
+S07,2024-02-26,2024-03-10,BA-701,Story,40,Done,Fixed,Security_Patch,"Critical Token Leak"
+S07,2024-02-26,2024-03-10,BA-702,Story,20,Done,Fixed,Error_Handling,"Global handler"
+S07,2024-02-26,2024-03-10,BA-703,Story,20,Done,Fixed,API_Update_V3,"Another schema change"
+S07,2024-02-26,2024-03-10,BA-704,Story,13,Done,Fixed,Frontend_Profile,"Mobile view"
+S07,2024-02-26,2024-03-10,BA-705,Bug,13,Done,Fixed,Dynamic_Forms,"Validation bypass"
+S07,2024-02-26,2024-03-10,BA-706,Bug,4,Done,Fixed,Reports,"Data mismatch"
+# Sprint 7 Total EV: 110 (Velocity still high, but Q-SPI crashes to 0.37)
+
+# --- PHASE 4: RECOVERY (Refactoring Sprint) ---
+
+S08,2024-03-11,2024-03-24,BA-801,Refactor,20,Done,Fixed,ACL_Implementation,"Anti-Corruption Layer"
+S08,2024-03-11,2024-03-24,BA-802,Refactor,13,Done,Fixed,Service_Decoupling,"Split InsuranceController"
+S08,2024-03-11,2024-03-24,BA-803,Refactor,7,Done,Fixed,Frontend_Cleanup,"Remove duplicated JS"
+S08,2024-03-11,2024-03-24,BA-804,Task,0,Done,Fixed,Documentation,"Update API docs"
+# Sprint 8 Total EV: 40 (Low Velocity, High Quality Gain)
+
+S09,2024-03-25,2024-04-07,BA-901,Story,20,Done,Fixed,New_Insurance_Rule,"Clean impl via ACL"
+S09,2024-03-25,2024-04-07,BA-902,Story,20,Done,Fixed,Dashboard_Update,"Analytics v2"
+S09,2024-03-25,2024-04-07,BA-903,Story,13,Done,Fixed,Mobile_App_API,"Endpoints for app"
+S09,2024-03-25,2024-04-07,BA-904,Story,13,Done,Fixed,Performance,"Query optimization"
+S09,2024-03-25,2024-04-07,BA-905,Story,13,Done,Fixed,Security_Audit,"Pen-test fixes"
+S09,2024-03-25,2024-04-07,BA-906,Bug,6,Done,Fixed,Frontend_Base,"CSS fixes"
+# Sprint 9 Total EV: 85 (Sustainable)
+
+S10,2024-04-08,2024-04-21,BA-1001,Story,20,Done,Fixed,Telemedicine,"Video call basics"
+S10,2024-04-08,2024-04-21,BA-1002,Story,20,Done,Fixed,Chat_Module,"Doctor-Patient chat"
+S10,2024-04-08,2024-04-21,BA-1003,Story,13,Done,Fixed,Notification,"Push notifs"
+S10,2024-04-08,2024-04-21,BA-1004,Story,13,Done,Fixed,Payment_Gateway,"Bank integration"
+S10,2024-04-08,2024-04-21,BA-1005,Story,13,Done,Fixed,Wallet,"User credit"
+S10,2024-04-08,2024-04-21,BA-1006,Story,8,Done,Fixed,Admin_Panel,"User moderation"
+S10,2024-04-08,2024-04-21,BA-1007,Bug,8,Done,Fixed,Mobile_App_API,"Auth token refresh"
+# Sprint 10 Total EV: 95 (Fully Recovered)

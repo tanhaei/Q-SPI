@@ -1,0 +1,7 @@
+Analysis_Date,Sprint,Project_Version,New_Code_Smells,New_Security_Hotspots,New_Technical_Debt_Hours,Critical_File_Path,Metrics_Note
+2024-01-14,S03,v1.2.0,15,0,5,"src/User.php","Stable baseline"
+2024-01-28,S04,v1.3.0_OTP,45,12,35,"src/Controllers/InsuranceController.php","High complexity added in OTP rush. God Class grew by 400 LOC."
+2024-02-11,S05,v1.4.0,68,8,55,"resources/views/claims/form_*.blade.php","Code Duplication > 15% in UI forms."
+2024-02-25,S06,v1.5.0_API,92,5,80,"src/Controllers/InsuranceController.php","Cyclomatic Complexity > 50. Controller now handles DB mapping directly."
+2024-03-10,S07,v1.5.1_Hotfix,120,4,100,"src/Auth/TokenStorage.js","Security Hotspot: Tokens in LocalStorage. Bankruptcy declared."
+2024-03-24,S08,v2.0.0_Refactor,5,0,5,"src/Services/ACL/InsuranceAdapter.php","Refactoring phase. Created ACL. Debt repaid."

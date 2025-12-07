@@ -1,0 +1,151 @@
+GIT COMMIT AUDIT TRAIL - PROJECT BIOARC
+
+ANONYMIZED FOR PEER REVIEW
+
+TIME FRAME: DEC 2023 - APR 2024
+
+--- SPRINT 1-3: INITIAL DEVELOPMENT (CLEAN CODE PHASE) ---
+
+commit a7f3b1c
+Author: Dev_Lead lead@bioarc.internal
+Date:   Mon Dec 04 10:15:00 2023
+Message: Initial commit. Setup Laravel structure with modular architecture.
+- Included strict linting rules (PSR-12).
+- Setup Docker environment.
+
+commit b2c4d5e
+Author: Dev_A dev_a@bioarc.internal
+Date:   Wed Dec 13 14:30:00 2023
+Message: Feat: Implement Patient Core module.
+- Added repository pattern for DB access.
+- Unit tests coverage > 90%.
+
+commit c3d5e6f
+Author: Dev_B dev_b@bioarc.internal
+Date:   Tue Jan 09 11:20:00 2024 (Sprint 3)
+Message: Feat: EHR basic forms.
+- Used reusable Vue.js components for form inputs.
+- Validations are handled via FormRequest classes on backend.
+
+--- SPRINT 4: THE RUSH (Start of Technical Debt Accumulation) ---
+
+Context: Management demanded OTP implementation in 3 days.
+
+commit d4e6f7a
+Author: Dev_C dev_c@bioarc.internal
+Date:   Thu Jan 18 16:45:00 2024
+Message: [URGENT] Implement OTP flow directly in AuthController.
+- Bypassed the standard auth service to save time.
+- Hardcoded SMS gateway API key (TODO: Move to config).
+- Warning: No unit tests for this flow yet.
+
+commit e5f7g8b
+Author: Dev_A dev_a@bioarc.internal
+Date:   Mon Jan 22 09:10:00 2024
+Message: Hotfix: Disable CSRF protection for OTP route.
+- The frontend couldn't handle the token refresh in time.
+- Temporary fix to unblock the release.
+
+commit f6g8h9c
+Author: Dev_Lead lead@bioarc.internal
+Date:   Wed Jan 24 18:00:00 2024
+Message: Merge pull request #45 (OTP Feature).
+Note: Code quality check failed (Cognitive Complexity > 15), but overriding due to deadline.
+
+--- SPRINT 5: FEATURE STACKING (The "Illusion of Progress") ---
+
+Context: High velocity reported, but code duplication is rampant.
+
+commit g7h9i0d
+Author: Dev_B dev_b@bioarc.internal
+Date:   Wed Jan 31 10:30:00 2024
+Message: Feat: Drug Interaction Check for Specialty A.
+- Logic is complex, handled inside the controller.
+
+commit h8i0j1e
+Author: Dev_B dev_b@bioarc.internal
+Date:   Sun Feb 04 14:20:00 2024
+Message: Feat: Drug Interaction for Specialty B and C.
+- Copy-pasted logic from Specialty A to 8 other blade files.
+- We need a shared component library, but no time right now.
+- SonarQube reported 15% duplication increase (Ignored).
+
+--- SPRINT 6: EROSION (API Schema Changes) ---
+
+Context: External API changed. Tightly coupled code makes updates painful.
+
+commit i9j1k2f
+Author: Dev_A dev_a@bioarc.internal
+Date:   Tue Feb 13 11:15:00 2024
+Message: Update Insurance API schema (v2).
+- Modified InsuranceController.php (now 3200 lines).
+- Had to update SQL queries manually in 14 different files because we didn't use the repository pattern in Sprint 4.
+
+commit j0k2l3g
+Author: Dev_C dev_c@bioarc.internal
+Date:   Mon Feb 19 19:45:00 2024
+Message: Quick fix for validation errors.
+- Commented out strict type checking in ClaimService.
+- "It works on my machine."
+
+--- SPRINT 7: TECHNICAL BANKRUPTCY (The Crash) ---
+
+Context: Critical Security Leak + Velocity drops to zero.
+
+commit k1l3m4h
+Author: Dev_Lead lead@bioarc.internal
+Date:   Wed Feb 28 08:30:00 2024
+Message: CRITICAL: Revert "Feature Mobile View".
+- We found JWT tokens stored in localStorage being logged to console.
+- The auth logic from Sprint 4 is completely broken with the new API.
+
+commit l2m4n5i
+Author: Dev_A dev_a@bioarc.internal
+Date:   Fri Mar 01 10:00:00 2024
+Message: Attempt to fix InsuranceController.
+- Failed. The file is too large to debug safely.
+- Any change breaks the 'Drug Interaction' feature.
+- TEAM DECISION: STOP DEVELOPMENT. We are technically bankrupt.
+
+--- SPRINT 8: RECOVERY (Refactoring / Paying the Debt) ---
+
+Context: Zero Story Points delivered. 100% effort on cleanup.
+
+commit m3n5o6j
+Author: Dev_Lead lead@bioarc.internal
+Date:   Tue Mar 12 09:00:00 2024
+Message: REFACTOR: Init Anti-Corruption Layer (ACL).
+- Created InsuranceAdapter interface.
+- Isolating external API calls from our core domain.
+
+commit n4o6p7k
+Author: Dev_B dev_b@bioarc.internal
+Date:   Thu Mar 14 15:30:00 2024
+Message: REFACTOR: Componentize Drug Interaction.
+- Created DrugInteractionService.
+- Removed 1200 lines of duplicated code from blade files.
+- SonarQube duplication dropped from 18% to 3%.
+
+commit o5p7q8l
+Author: Dev_A dev_a@bioarc.internal
+Date:   Mon Mar 18 11:45:00 2024
+Message: REFACTOR: Split InsuranceController.
+- Broke down the God Class into ClaimController, PatientInsuranceController, and TariffController.
+- Re-enabled unit tests.
+
+--- SPRINT 9-10: STABILIZATION (Sustainable Pace) ---
+
+commit p6q8r9m
+Author: Dev_C dev_c@bioarc.internal
+Date:   Wed Mar 27 10:15:00 2024
+Message: Feat: New Insurance Rule (V3).
+- implemented via the new ACL.
+- Took only 4 hours (compared to 3 days in Sprint 6).
+- Q-SPI is now aligned with SPI.
+
+commit q7r9s0n
+Author: Dev_Lead lead@bioarc.internal
+Date:   Tue Apr 09 16:00:00 2024
+Message: Feat: Telemedicine Module.
+- Clean architecture.
+- No major code smells detected.
